@@ -25,7 +25,7 @@ const FirstCard = () => {
         animate={{ scale: 1 }}
         transition={{ duration: 2, delay: 0.8, type: "spring", stiffness: 100 }}
         className="flex justify-center items-center">
-        <Link href={"/mycard"}>
+        <Link href="/mycard">
           <div className="p-5 bg-sky-600 rounded-full hover:scale-105 transition-all shadow-md">
             <h2 className="font-semibold text-slate-200">Visit My Card</h2>
           </div>
