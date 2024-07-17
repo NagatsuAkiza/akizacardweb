@@ -1,54 +1,46 @@
 "use client";
 
-import React from "react";
+import { Card } from "flowbite-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const Page = () => {
   return (
     <motion.div
+      className="flex justify-center items-center min-h-screen"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
-      transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 100 }}
-      className="flex justify-center items-center min-h-screen">
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img
-            className="rounded-t-lg"
+      transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 100 }}>
+      <Card className="max-w-sm">
+        <div className="flex flex-col items-center pb-10">
+          <Image
+            alt="my pfp"
+            height="96"
             src="https://i.postimg.cc/WzNKdr02/Untitled197-20210923214753.png"
-            alt=""
+            width="96"
+            className="mb-3 rounded-full shadow-lg"
           />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-              Akiza Pages
-            </h5>
-          </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Welcome to my card, click the button below to see what commisions i can work on
+          <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+          <p className="mt-2 text-center text-sm text-gray-700 dark:text-gray-300">
+            Hi, I'm Bonnie Green, a passionate visual designer with over 5 years of experience in
+            creating stunning visual content and user-friendly designs. I specialize in digital
+            illustrations, branding, and UI/UX design.
           </p>
-          <Link
-            href="/mywork"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Link>
+          <div className="mt-4 flex space-x-3 lg:mt-6">
+            <a
+              href="#"
+              className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">
+              Social Media
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+              That I Work On
+            </a>
+          </div>
         </div>
-      </div>
+      </Card>
     </motion.div>
   );
 };
