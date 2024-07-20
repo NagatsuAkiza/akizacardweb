@@ -27,42 +27,42 @@ export const Linked: LinkedType = {
   sites: {
     simpleweb: {
       name: "Simple Web",
-      path: "/simpleweb",
+      path: "workspace/simpleweb",
       url: {
-        price: "/simpleweb/price",
-        tos: "/simpleweb/tos",
-        howtoorder: "/simpleweb/howtoorder",
-        waitinglist: "/simpleweb/waitinglist"
+        price: "workspace/simpleweb/price",
+        tos: "workspace/simpleweb/tos",
+        howtoorder: "workspace/simpleweb/howtoorder",
+        waitinglist: "workspace/simpleweb/waitinglist"
       }
     },
     landingpage: {
       name: "Landing Page",
-      path: "/landingpage",
+      path: "workspace/landingpage",
       url: {
-        price: "/landingpage/price",
-        tos: "/landingpage/tos",
-        howtoorder: "/landingpage/howtoorder",
-        waitinglist: "/landingpage/waitinglist"
+        price: "workspace/landingpage/price",
+        tos: "workspace/landingpage/tos",
+        howtoorder: "workspace/landingpage/howtoorder",
+        waitinglist: "workspace/landingpage/waitinglist"
       }
     },
     portfolio: {
       name: "Portfolio",
-      path: "/portfolio",
+      path: "workspace/portfolio",
       url: {
-        price: "/portfolio/price",
-        tos: "/portfolio/tos",
-        howtoorder: "/portfolio/howtoorder",
-        waitinglist: "/portfolio/waitinglist"
+        price: "workspace/portfolio/price",
+        tos: "workspace/portfolio/tos",
+        howtoorder: "workspace/portfolio/howtoorder",
+        waitinglist: "workspace/portfolio/waitinglist"
       }
     },
     costumecard: {
       name: "Costume Card",
-      path: "/costumecard",
+      path: "workspace/costumecard",
       url: {
-        price: "/costumecard/price",
-        tos: "/costumecard/tos",
-        howtoorder: "/costumecard/howtoorder",
-        waitinglist: "/costumecard/waitinglist"
+        price: "workspace/costumecard/price",
+        tos: "workspace/costumecard/tos",
+        howtoorder: "workspace/costumecard/howtoorder",
+        waitinglist: "workspace/costumecard/waitinglist"
       }
     }
   }

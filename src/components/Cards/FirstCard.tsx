@@ -26,7 +26,7 @@ const FirstCard = () => {
         transition={{ duration: 2, delay: 0.8, type: "spring", stiffness: 100 }}
         className="flex justify-center items-center">
         <Link href="/mycard">
-          <div className="p-5 bg-sky-600 rounded-full hover:scale-105 transition-all shadow-md">
+          <div className="p-5 bg-[#1e3a8a] rounded-full hover:scale-105 transition-all shadow-md">
             <h2 className="font-semibold text-slate-200">Visit My Card</h2>
           </div>
         </Link>
