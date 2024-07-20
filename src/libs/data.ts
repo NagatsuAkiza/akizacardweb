@@ -46,13 +46,13 @@ export const Linked: LinkedType = {
       }
     },
     portfolio: {
-      name: "Portfolio",
-      path: "workspace/portfolio",
+      name: "Portofolio",
+      path: "workspace/portofolio",
       url: {
-        price: "workspace/portfolio/price",
-        tos: "workspace/portfolio/tos",
-        howtoorder: "workspace/portfolio/howtoorder",
-        waitinglist: "workspace/portfolio/waitinglist"
+        price: "workspace/portofolio/price",
+        tos: "workspace/portofolio/tos",
+        howtoorder: "workspace/portofolio/howtoorder",
+        waitinglist: "workspace/portofolio/waitinglist"
       }
     },
     costumecard: {
