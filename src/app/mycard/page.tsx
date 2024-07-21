@@ -10,7 +10,7 @@ const Page = () => {
       className="flex justify-center items-center min-h-screen"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
-      transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 100 }}>
+      transition={{ duration: 0.2, type: "spring", stiffness: 30 }}>
       <Card className="max-w-sm">
         <div className="flex flex-col items-center pb-10">
           <Image

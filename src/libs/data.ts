@@ -1,28 +1,21 @@
-// data.ts
-
-// Define the type for the URLs
 interface Urls {
   price: string;
   tos: string;
   howtoorder: string;
   waitinglist: string;
 }
-
-// Define the type for the site structure
 interface Site {
   name: string;
   path: string;
   url: Urls;
 }
 
-// Define the type for the Linked object
 interface LinkedType {
   sites: {
     [key: string]: Site;
   };
 }
 
-// Create the Linked object with explicit type annotation
 export const Linked: LinkedType = {
   sites: {
     simpleweb: {
@@ -64,6 +57,38 @@ export const Linked: LinkedType = {
         howtoorder: "workspace/costumecard/howtoorder",
         waitinglist: "workspace/costumecard/waitinglist"
       }
+    }
+  }
+};
+
+interface SosmedSite {
+  name: string;
+  url: string;
+}
+
+interface SosmedType {
+  sites: {
+    [key: string]: SosmedSite;
+  };
+}
+
+export const Sosmed: SosmedType = {
+  sites: {
+    facebook: {
+      name: "Facebook",
+      url: "https://www.facebook.com/nagatsu.akiza"
+    },
+    twitter: {
+      name: "X",
+      url: "https://x.com/nagatsuakiza"
+    },
+    instagram: {
+      name: "Instagram",
+      url: "https://www.instagram.com/nagatsuakiza"
+    },
+    youtube: {
+      name: "YouTube",
+      url: "https://www.youtube.com/@NagatsuAkiza"
     }
   }
 };
