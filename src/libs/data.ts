@@ -1,9 +1,14 @@
+import { AiFillFacebook, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { IconType } from "react-icons";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 interface Urls {
   price: string;
   tos: string;
   howtoorder: string;
   waitinglist: string;
 }
+
 interface Site {
   name: string;
   path: string;
@@ -39,13 +44,13 @@ export const Linked: LinkedType = {
       }
     },
     portfolio: {
-      name: "Portofolio",
-      path: "workspace/portofolio",
+      name: "Portfolio",
+      path: "workspace/portfolio",
       url: {
-        price: "workspace/portofolio/price",
-        tos: "workspace/portofolio/tos",
-        howtoorder: "workspace/portofolio/howtoorder",
-        waitinglist: "workspace/portofolio/waitinglist"
+        price: "workspace/portfolio/price",
+        tos: "workspace/portfolio/tos",
+        howtoorder: "workspace/portfolio/howtoorder",
+        waitinglist: "workspace/portfolio/waitinglist"
       }
     },
     costumecard: {
@@ -61,9 +66,16 @@ export const Linked: LinkedType = {
   }
 };
 
+interface SosmedIcon {
+  icon: IconType;
+}
+
 interface SosmedSite {
   name: string;
   url: string;
+  icon: {
+    [key: string]: SosmedIcon;
+  };
 }
 
 interface SosmedType {
@@ -76,19 +88,39 @@ export const Sosmed: SosmedType = {
   sites: {
     facebook: {
       name: "Facebook",
-      url: "https://www.facebook.com/nagatsu.akiza"
+      url: "https://www.facebook.com/nagatsu.akiza",
+      icon: {
+        default: {
+          icon: AiFillFacebook
+        }
+      }
     },
     twitter: {
       name: "X",
-      url: "https://x.com/nagatsuakiza"
+      url: "https://x.com/nagatsuakiza",
+      icon: {
+        default: {
+          icon: FaSquareXTwitter
+        }
+      }
     },
     instagram: {
       name: "Instagram",
-      url: "https://www.instagram.com/nagatsuakiza"
+      url: "https://www.instagram.com/nagatsuakiza",
+      icon: {
+        default: {
+          icon: AiFillInstagram
+        }
+      }
     },
     youtube: {
       name: "YouTube",
-      url: "https://www.youtube.com/@NagatsuAkiza"
+      url: "https://www.youtube.com/@NagatsuAkiza",
+      icon: {
+        default: {
+          icon: AiFillYoutube
+        }
+      }
     }
   }
 };

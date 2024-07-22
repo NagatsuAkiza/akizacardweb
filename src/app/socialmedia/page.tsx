@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Sosmed } from "@/libs/data";
 import { Card } from "antd";
-import { AiFillFacebook } from "react-icons/ai";
 
 const Page = () => {
   const fadeInAnimation = {
@@ -50,9 +49,14 @@ const Page = () => {
                     backgroundColor: "#1e3a8a"
                   }}
                   className="flex items-center justify-center font-semibold text-sm group-hover:scale-105 border-black/40 rounded-xl transition-transform">
-                  <p className="text-white hover:text-gray-400/80 transition-all">
-                    {Sosmed.sites[key].name}
-                  </p>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-white group-hover:text-gray-400/80 transition-all">
+                      {React.createElement(Sosmed.sites[key].icon.default.icon, { size: 24 })}
+                    </span>
+                    <p className="text-white group-hover:text-gray-400/80 transition-all">
+                      {Sosmed.sites[key].name}
+                    </p>
+                  </div>
                 </Card>
               </Link>
             </motion.li>

@@ -3,6 +3,8 @@
 import { Card } from "flowbite-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Route } from "react-router-dom";
+import { IoArrowBackOutline } from "react-icons/io5";
 
 const Page = () => {
   return (
@@ -11,6 +13,7 @@ const Page = () => {
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ duration: 0.2, type: "spring", stiffness: 30 }}>
+      <div></div>
       <Card className="max-w-sm">
         <div className="flex flex-col items-center pb-10">
           <Image
